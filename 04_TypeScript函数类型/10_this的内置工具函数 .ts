@@ -7,7 +7,7 @@ type FooType = typeof foo
 type FooThisType = ThisParameterType<FooType>
 // 2.OmitOmitThisParameter:删除this参数类型，剩余的函数类型
 type PureFooType = OmitThisParameter<FooType>
-// 3.ThisType:用于绑定一个上下文的this
+// 3.ThisType:用于绑定一个上下文的this(框架用的比较多)
 interface IState {
     name: string
     age: number
